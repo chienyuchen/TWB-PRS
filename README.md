@@ -102,7 +102,7 @@ PRS prediction of the fourteen traits is available here. Genotype data from the 
 - python packages: numpy and pandas
 
 #### Usage
-- models/beta.tar.gz has to be extracted before predicting
+- models/beta.tar.gz has to be pulled with git lfs and extracted before predicting
 ```
 $ bash src/predictor.sh -h
 
