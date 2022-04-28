@@ -10,7 +10,7 @@ Note that the effect size of SNPs in the PRS model is only used for the accumula
 Both Taiwan Biobank 1.0 (TWB1.0) and 2.0 (TWB2.0) are included in this study.
 
 | Dataset | Genome Reference | Sample Size | SNP Number |
-| --- | --- | --- | --- | --- |
+| --- | --- | --- | --- |
 | TWB1.0 | hg19 | 27,500 | 653,288 |
 | TWB2.0 | hg38 | 68,978 | 748,344 |
 
@@ -31,8 +31,9 @@ Binary traits:
 - Individuals meet the measurement criteria or self report are denoted as positive.
 - For analysis, measurement criteria are referred to the diagnostic criteria, though an exact diagnosis should be made by a clinical doctor.
 - Criteria:
+
 | Trait | Measurement | Self report |
-| --- | --- | --- | V |
+| --- | --- | --- |
 | Obesity | BMI &le; 30 | V |
 | Hypertension (HTN) | SBP &le; 140 or DBP &le; 90 | V |
 | Hyperlipidemia (HLD) | total cholesterol &le; 200 or TG &le; 150 or LDL &le; 100 | V |
@@ -56,7 +57,9 @@ There are six major steps of the GWAS-PRS analysis pipeline.
 5. PRS Model: Adjust the effect size of SNPs from GWAS using the target set. For example, select representative SNPs based on the linkage disequilibrium.
 6. Validation: Evaluate the performance of PRS models on the testing set.
 
-![Analysis Pipeline](figures/pipeline.png)
+<p align="center">
+  <img src="figures/pipeline.png" width="600" align="center" />
+</p>
 
 
 ## Performance
@@ -64,18 +67,30 @@ There are six major steps of the GWAS-PRS analysis pipeline.
 Area under the receiver operating characteristic curve (AUROC) and Spearman's correlation are used to evaluate the performance of a binary trait and a quantitative trait respectively.
 
 Performance of the binary trait
-![Binary Trait Performance](figures/performance.clf.png)
+
+<p align="center">
+  <img src="figures/performance.clf.png" width="600" align="center" />
+</p>
 
 Performance of the quantitative trait
-![Quantitative Trait Performance](figures/performance.reg.png)
+
+<p align="center">
+  <img src="figures/performance.reg.png" width="600" align="center" />
+</p>
 
 The quantile plot shows the risk stratification. For each model, samples in the test set are divided into 10 quantiles of increasing PRS. Then, in each quantile, the odds ratio is calculated for binary traits while the mean of values is calculated for quantitative traits. A great difference between the first and the last group represents a good risk stratification.
 
 Quantile plot of the hyperlipidemia (binary trait)
-![Quantile Plot - Hyperlipidemia](figures/quantile/TWB2_HLD.percentile.png)
+
+<p align="center">
+  <img src="figures/quantile/TWB2_HLD.percentile.png" width="600" align="center" />
+</p>
 
 Quantile plot of the LDL (quantitative trait)
-![Quantile Plot - LDL](figures/quantile/TWB2_LDL.percentile.png)
+
+<p align="center">
+  <img src="figures/quantile/TWB2_LDL.percentile.png" width="600" align="center" />
+</p>
 
 
 ## Prediction
