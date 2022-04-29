@@ -19,6 +19,8 @@ Both Taiwan Biobank 1.0 (TWB1.0) and 2.0 (TWB2.0) are included in this study.
 
 PRS analysis is applied on fourteen traits selected from Taiwan Biobank. Quantitative traits are derived from the measurement directly, while binary traits are labelled using both measurements and self reports.
 
+The distribution plots of quantitative traits are located at [Distribution](figures/distribution). Note that only values within &plusmn;5 standard deviation are plotted.
+
 Quantitative traits:
 - Height
 - Body mass index (BMI)
@@ -39,6 +41,16 @@ Binary traits:
 | Hyperlipidemia (HLD) | total cholesterol &le; 200 or TG &le; 150 or LDL &le; 100 | V |
 | Type 2 diabetes (T2D) | fasting glucose &le; 126 or HbA1c &le; 6.5 | V |
 | Gout | X | V |
+
+- Sample size:
+
+| Trait | TWB1 Case | TWB1 Control | TWB1 Unknown | TWB2 Case | TWB2 Control | TWB2 Unknown |
+| --- | --- | --- | --- | --- | --- | --- |
+| OBESITY | 25,257 | 2,230 | 13 | 63,932 | 5,042 | 4 | 
+| HTN | 20,379 | 7,116 | 5 | 51,991 | 16,972 | 15 | 
+| HLD | 4,530 | 22,969 | 1 | 12,743 | 56,232 | 3 | 
+| T2D | 24,506 | 2,993 | 1 | 61,804 | 7,171 | 3 | 
+| GOUT | 25,887 | 1,612 | 1 | 66,523 | 2,452 | 3 | 
 
 
 ## Pipeline
@@ -64,6 +76,8 @@ There are six major steps of the GWAS-PRS analysis pipeline.
 
 ## Performance
 
+The Manhattan plot of each trait derived from GWAS is located at [Manhattan](figures/manhattan).
+
 Area under the receiver operating characteristic curve (AUROC) and Spearman's correlation are used to evaluate the performance of a binary trait and a quantitative trait respectively.
 
 Performance of the binary trait
@@ -78,7 +92,7 @@ Performance of the quantitative trait
   <img src="figures/performance.reg.png" width="600" align="center" />
 </p>
 
-The quantile plot shows the risk stratification. For each model, samples in the test set are divided into 10 quantiles of increasing PRS. Then, in each quantile, the odds ratio is calculated for binary traits while the mean of values is calculated for quantitative traits. A great difference between the first and the last group represents a good risk stratification.
+The quantile plot shows the risk stratification. For each model, samples in the test set are divided into 10 quantiles of increasing PRS. Then, in each quantile, the odds ratio is calculated for binary traits while the mean of values is calculated for quantitative traits. A great difference between the first and the last group represents a good risk stratification. (Quantile plots are located at [Quantile](figures/quantile))
 
 Quantile plot of the hyperlipidemia (binary trait)
 
