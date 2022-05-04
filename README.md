@@ -23,6 +23,8 @@ The distribution plots of quantitative traits are located at [figures/distributi
 
 Quantitative traits:
 - Height
+  - SEX is a very strong factor, so it serves as a covariate during GWAS.
+  - Two PRS models are built for male and female respectively.
 - Body mass index (BMI)
 - Blood pressure: systolic blood pressure (SBP), diastolic blood pressure (DBP)
 - Blood lipids: triacelglycerol (TG), low-density lipoprotein (LDL), high-density lipoprotein (HDL)
