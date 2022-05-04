@@ -140,3 +140,6 @@ $ bash src/predictor.sh \
     -d example/output \
     -o exp
 ```
+
+Copyright 2022 NTU c4Lab and Taiwan AI Labs. All rights Reserved.
+The released models can only be used for research or education and are not suitable for medical purposes.
