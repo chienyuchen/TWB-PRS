@@ -117,6 +117,13 @@ PRS prediction of the fourteen traits is available here. Genotype data from the 
 - plink1.9, plink2, and python3
 - python packages: numpy and pandas
 
+or you can run it in docker
+
+```
+docker build . -t c4lab/twb-prs
+docker run -it --rm c4lab/twb-prs -h
+```
+
 #### Usage
 - models/beta.tar.gz has to be pulled with git lfs and extracted before predicting
 ```
