@@ -1,6 +1,8 @@
 # TWB-PRS
 
-In this repository, we release fourteen polygenic risk score (PRS) models using Taiwan Biobank data -- TWBR10411-03 (Title: Constructing Pharmacogenomics Testing Platform and Discovering Causal Genes of Abnormal Drug Responses; PI: Dr. Pei-Lung Chen and co-PI: Dr. Chien-Yu Chen) -- including five binary phenotypes and nine quantitative phenotypes. Each model, derived from the GWAS-PRS analysis, can be used to estimate the genetic propensity for a specific trait at the individual level. Three well-known PRS algorithms are performed to build prediction models, including clumping and thresholding, Lassosum, and LDpred2.
+In this repository, we release fourteen polygenic risk score (PRS) models using Taiwan Biobank data, including five binary phenotypes and nine quantitative phenotypes. Each model, derived from the GWAS-PRS analysis, can be used to estimate the genetic propensity for a specific trait at the individual level. Three well-known PRS algorithms are performed to build prediction models, including clumping and thresholding, Lassosum, and LDpred2.
+
+<b>Taiwan Biobank application:</b> TWBR10411-03 (<b>Title:</b> Constructing Pharmacogenomics Testing Platform and Discovering Causal Genes of Abnormal Drug Responses; <b>PI:</b> Dr. Pei-Lung Chen and <b>co-PI:</b> Dr. Chien-Yu Chen) 
 
 Note that the effect size of SNPs in the PRS model is only used for the accumulation of risk score. The cause of diseases can not be explained via SNPs with high effect size because the relation between the effect size and the pathogenicity is uncertain.
 
