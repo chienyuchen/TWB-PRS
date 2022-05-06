@@ -4,7 +4,7 @@ In this repository, we release fourteen polygenic risk score (PRS) models using 
 
 <b>Taiwan Biobank application:</b> TWBR10411-03 (<b>Title:</b> Constructing Pharmacogenomics Testing Platform and Discovering Causal Genes of Abnormal Drug Responses; <b>PI:</b> Dr. Pei-Lung Chen and <b>co-PI:</b> Dr. Chien-Yu Chen) 
 
-Note that the effect size of SNPs in the PRS model is only used for the accumulation of risk score. The cause of diseases can not be explained via SNPs with high effect size because the relation between the effect size and the pathogenicity is uncertain.
+Note that the effect size of SNPs in the PRS model is only used for the accumulation of risk scores. The cause of diseases can not be explained via SNPs with high effect sizes because the relation between the effect size and the pathogenicity is uncertain.
 
 
 ## Dataset
@@ -19,7 +19,7 @@ Both Taiwan Biobank 1.0 (TWB1.0) and 2.0 (TWB2.0) are included in this study.
 
 ## Traits
 
-PRS analysis is applied on fourteen traits selected from Taiwan Biobank. Quantitative traits are derived from the measurement directly, while binary traits are labelled using both measurements and self reports.
+PRS analysis is applied on fourteen traits selected from Taiwan Biobank. Quantitative traits are derived from the measurements directly, while binary traits are labelled using both measurements and self reports.
 
 The distribution plots of quantitative traits are located at [figures/distribution](figures/distribution). Note that only values within &plusmn;5 standard deviation are plotted.
 
@@ -144,6 +144,10 @@ $ bash src/predictor.sh \
     -d example/output \
     -o exp
 ```
+
+## Data Source
+
+<b>Taiwan Biobank application:</b> TWBR10411-03 (<b>Title:</b> Constructing Pharmacogenomics Testing Platform and Discovering Causal Genes of Abnormal Drug Responses; <b>PI:</b> Dr. Pei-Lung Chen and <b>co-PI:</b> Dr. Chien-Yu Chen)
 
 ## Copyright and Usage
 Copyright 2022 NTU c4Lab and Taiwan AI Labs. All rights Reserved.
