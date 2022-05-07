@@ -40,10 +40,10 @@ Binary traits:
 
 | Trait | Measurement | Self report |
 | --- | --- | --- |
-| Obesity | BMI &le; 30 | V |
-| Hypertension (HTN) | SBP &le; 140 or DBP &le; 90 | V |
-| Hyperlipidemia (HLD) | total cholesterol &le; 200 or TG &le; 150 or LDL &le; 100 | V |
-| Type 2 diabetes (T2D) | fasting glucose &le; 126 or HbA1c &le; 6.5 | V |
+| Obesity | BMI &ge; 30 | V |
+| Hypertension (HTN) | SBP &ge; 140 or DBP &ge; 90 | V |
+| Hyperlipidemia (HLD) | total cholesterol &ge; 200 or TG &ge; 150 or LDL &ge; 100 | V |
+| Type 2 diabetes (T2D) | fasting glucose &ge; 126 or HbA1c &ge; 6.5 | V |
 | Gout | X | V |
 
 - Sample size:
