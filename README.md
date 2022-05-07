@@ -48,7 +48,7 @@ Binary traits:
 
 - Sample size:
 
-| Trait | TWB1 Case | TWB1 Control | TWB1 Unknown | TWB2 Case | TWB2 Control | TWB2 Unknown |
+| Trait | TWB1 Control | TWB1 Case | TWB1 Unknown | TWB2 Control | TWB2 Case | TWB2 Unknown |
 | --- | --- | --- | --- | --- | --- | --- |
 | OBESITY | 25,257 | 2,230 | 13 | 63,932 | 5,042 | 4 | 
 | HTN | 20,379 | 7,116 | 5 | 51,991 | 16,972 | 15 | 
