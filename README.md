@@ -26,7 +26,7 @@ The distribution plots of quantitative traits are located at [figures/distributi
 Quantitative traits:
 - Height
   - SEX is a very strong factor, so it serves as a covariate during GWAS.
-  - Two PRS models are built for male and female respectively.
+  - Two PRS models are built for male and female, respectively.
 - Body mass index (BMI)
 - Blood pressure: systolic blood pressure (SBP), diastolic blood pressure (DBP)
 - Blood lipids: triacelglycerol (TG), low-density lipoprotein (LDL), high-density lipoprotein (HDL)
@@ -34,7 +34,7 @@ Quantitative traits:
 - Uric acid
 
 Binary traits:
-- Individuals meet the measurement criteria or self report are denoted as positive.
+- Individuals meeting the measurement criteria or with self report are denoted as positive.
 - For analysis, measurement criteria are referred to the diagnostic criteria, though an exact diagnosis should be made by a clinical doctor.
 - Criteria:
 
@@ -59,7 +59,7 @@ Binary traits:
 
 ## Pipeline
 
-The PRS pipeline is referred to a comprehensive tutorial by Choi and colleagues.
+The adopted PRS pipeline follows a comprehensive tutorial by Choi and colleagues.
 ```
 Choi, S. W., Mak, T. S.-H., & O’Reilly, P. F. (2020). Tutorial: A guide to performing polygenic risk score analyses. Nature Protocols, 15(9), 2759–2772. https://doi.org/10.1038/s41596-020-0353-1
 ```
@@ -96,7 +96,7 @@ Performance of the quantitative trait
   <img src="figures/performance.reg.png" width="600" align="center" />
 </p>
 
-The quantile plot shows the risk stratification. For each model, samples in the test set are divided into 10 quantiles of increasing PRS. Then, in each quantile, the odds ratio is calculated for binary traits while the mean of values is calculated for quantitative traits. A great difference between the first and the last group represents a good risk stratification. (Quantile plots are located at [figures/quantile](figures/quantile))
+The quantile plot shows the risk stratification. For each model, samples in the test set are divided into 10 quantiles of increasing PRS. Then, in each quantile, the odds ratio is calculated for binary traits, while the mean of values is calculated for quantitative traits. A great difference between the first and the last group represents a good risk stratification. (Quantile plots are located at [figures/quantile](figures/quantile))
 
 Quantile plot of the hyperlipidemia (binary trait)
 
