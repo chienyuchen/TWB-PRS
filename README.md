@@ -36,13 +36,14 @@ Quantitative traits:
 Binary traits:
 - Individuals meeting the measurement criteria or with self report are denoted as positive.
 - For analysis, measurement criteria are referred to the diagnostic criteria, though an exact diagnosis should be made by a clinical doctor.
+- The criterium of hypertriglyceridemia is derived from the indication for drugs.
 - Criteria:
 
 | Trait | Measurement | Self report |
 | --- | --- | --- |
 | Obesity | BMI &ge; 30 | V |
 | Hypertension (HTN) | SBP &ge; 140 or DBP &ge; 90 | V |
-| Hyperlipidemia (HLD) | total cholesterol &ge; 200 or TG &ge; 150 or LDL &ge; 100 | V |
+| Hypertriglyceridemia (HTG) | TG &ge; 200 or HDL &ge; 40 | X |
 | Type 2 diabetes (T2D) | fasting glucose &ge; 126 or HbA1c &ge; 6.5 | V |
 | Gout | X | V |
 
@@ -52,7 +53,7 @@ Binary traits:
 | --- | --- | --- | --- | --- | --- | --- |
 | OBESITY | 25,257 | 2,230 | 13 | 63,932 | 5,042 | 4 | 
 | HTN | 20,379 | 7,116 | 5 | 51,991 | 16,972 | 15 | 
-| HLD | 4,530 | 22,969 | 1 | 12,743 | 56,232 | 3 | 
+| HTG | 25,793 | 1,706 | 1 | 65,919 | 3,056 | 3 | 
 | T2D | 24,506 | 2,993 | 1 | 61,804 | 7,171 | 3 | 
 | GOUT | 25,887 | 1,612 | 1 | 66,523 | 2,452 | 3 | 
 
@@ -98,10 +99,10 @@ Performance of the quantitative trait
 
 The quantile plot shows the risk stratification. For each model, samples in the test set are divided into 10 quantiles of increasing PRS. Then, in each quantile, the odds ratio is calculated for binary traits, while the mean of values is calculated for quantitative traits. A great difference between the first and the last group represents a good risk stratification. (Quantile plots are located at [figures/quantile](figures/quantile))
 
-Quantile plot of the hyperlipidemia (binary trait)
+Quantile plot of the hypertriglyceridemia (binary trait)
 
 <p align="center">
-  <img src="figures/quantile/TWB2_HLD.percentile.png" width="600" align="center" />
+  <img src="figures/quantile/TWB2_HTG.percentile.png" width="600" align="center" />
 </p>
 
 Quantile plot of the LDL (quantitative trait)
@@ -138,8 +139,8 @@ options:
 ```
 $ bash src/predictor.sh \
     -i example/exp \
-    -b models/beta/TWB2_HLD.beta.tsv \
-    -r models/rank/TWB2_HLD.rank.csv \
+    -b models/beta/TWB2_HTG.beta.tsv \
+    -r models/rank/TWB2_HTG.rank.csv \
     -m clf \
     -d example/output \
     -o exp
