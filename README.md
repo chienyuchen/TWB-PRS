@@ -43,7 +43,7 @@ Binary traits:
 | --- | --- | --- |
 | Obesity | BMI &ge; 30 | V |
 | Hypertension (HTN) | SBP &ge; 140 or DBP &ge; 90 | V |
-| Hypertriglyceridemia (HTG) | TG &ge; 200 or HDL &ge; 40 | X |
+| Hypertriglyceridemia (HTG) | TG &ge; 200 and HDL &ge; 40 | X |
 | Type 2 diabetes (T2D) | fasting glucose &ge; 126 or HbA1c &ge; 6.5 | V |
 | Gout | X | V |
 
