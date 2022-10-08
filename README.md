@@ -157,6 +157,8 @@ $ bash src/predictor.sh \
 
 <b>Taiwan Biobank application:</b> TWBR10411-03 (<b>Title:</b> Constructing Pharmacogenomics Testing Platform and Discovering Causal Genes of Abnormal Drug Responses; <b>PI:</b> Dr. Pei-Lung Chen and <b>co-PI:</b> Dr. Chien-Yu Chen)
 
+<b>The beta file is currently unavailable because of the data availability policy of Taiwan Biobank<b>
+
 ## Copyright and Usage
 Copyright 2022 NTU c4Lab and Taiwan AI Labs. All rights Reserved.
 The released models can only be used for research or education and are not suitable for medical purposes.
